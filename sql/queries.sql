@@ -18,7 +18,7 @@ WHERE l.Expiry_Date > CURRENT_DATE();
 
 -- 4. Get the version release history for a specific software product
 SELECT s.Software_Name, r.Release_Version, r.Release_Date
-FROM `Release` r
+FROM App_Release r
 JOIN Software s ON r.Software_ID = s.Software_ID
 WHERE s.Software_Name = 'CloudSync Manager'
 ORDER BY r.Release_Date DESC;
