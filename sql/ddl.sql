@@ -53,7 +53,7 @@ CREATE TABLE License (
 );
 
 -- 6. Release Table
-CREATE TABLE Release (
+CREATE TABLE App_Release (
     Release_ID INT PRIMARY KEY AUTO_INCREMENT,
     Release_Version VARCHAR(20) NOT NULL,
     Release_Date DATE NOT NULL,
